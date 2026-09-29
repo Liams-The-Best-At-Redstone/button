@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width height=device-height">
 </head>
 <body>
-  <h1>Hello World!</h1>
+  <h1 id="score"></h1>
+  <script>
+    let presses = 0;
+    const text = document.getElementById("score");
+
+    window.addEventListener('keydown', function(event) -> {
+      if (event.key === ' ' || event.code === "Space") {
+        presses++;
+        text.innerHtml = presses;
+      }
+    });
+  </script>
 </body>
 </html>
