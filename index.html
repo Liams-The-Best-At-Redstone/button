@@ -2,18 +2,18 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width height=device-height">
+  <meta name="viewport" content="width=device-width, height=device-height">
 </head>
 <body>
-  <h1 id="score"></h1>
+  <h1 id="score">0</h1>
   <script>
     let presses = 0;
     const text = document.getElementById("score");
 
-    window.addEventListener('keydown', function(event) -> {
+    window.addEventListener('keydown', function(event) {
       if (event.key === ' ' || event.code === "Space") {
         presses++;
-        text.innerHtml = presses;
+        text.innerHTML = presses;
       }
     });
   </script>
