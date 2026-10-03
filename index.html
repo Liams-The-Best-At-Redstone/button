@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, height=device-height">
   <style>
     .score-text {
+      display: flex;
       justify-content: center;
       align-items: center;
       font: sans-sarif;
@@ -28,6 +29,7 @@
           text.innerHTML = presses;
           isDown = true;
         }
+      }
       });
 
     window.addEventListener('keyup', function(event) {
