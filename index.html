@@ -3,9 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height">
+  <style>
+    .score-text {
+      justify-content: center;
+      align-items: center;
+      font: sans-sarif;
+      font-size: 30px;
+    }
+  </style>
 </head>
 <body>
-  <h1 id="score">0</h1>
+  <div class="score-text">
+    <h1 id="score">0</h1>
+  </div>
   <script>
     let presses = 0;
     const text = document.getElementById("score");
